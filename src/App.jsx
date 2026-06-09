@@ -79,7 +79,7 @@ function Step1({ items, setItems, onNext }) {
       const res=await fetch("/api/anthropic",{
         method:"POST", headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
-          model:"claude-3-haiku-20240307", max_tokens:1000,
+          model:"claude-haiku-4-5-20251001", max_tokens:1000,
           messages:[{ role:"user", content:[
             { type:"image", source:{ type:"base64", media_type:file.type, data:b64 }},
             { type:"text", text:`Extrae los ítems de esta boleta de restaurante. Responde SOLO con JSON válido sin markdown. Formato: [{"name":"nombre","price":precio_unitario_numero,"qty":cantidad}]. Precios solo números sin formato de miles.` }
