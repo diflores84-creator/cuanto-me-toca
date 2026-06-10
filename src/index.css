@@ -1,4 +1,15 @@
 :root {
+  * {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
